@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background: #D6E9FE;
+
+    width: 100%;
+    padding: 20px;
+
+    top: 0;
+    /* necessary for proper functioning of fixed header in this case */
+}
+
+.logo-container {
+    width: 350px;
+    padding: 30px auto;
+}
+
+#header-img {
+    max-width: 100%;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    font-size: 1.05rem;
+}
+
+
+main{
+padding-top: 100px;
+/* used because of fixed menu, otherwise the top part of main would be invisible in this case */
+}
+
+#intro-action{
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+input{
+margin: 10px;
+}
+#email{
+    width: 250px;
+}
+#submit{
+    width: 150px;
+    background-color: #f1c40f;;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0;
+    padding: 10px 20px;
+}
+
+
+#features{
+    max-width: 900px;
+    /*width essential for proper behaviour*/
+
+    margin: 0 auto;
+}
+
+.desc-feat{
+    margin: 20px auto;
+    display: flex;
+}
+
+/*feat-icon class helps me to apply the same look to all the icons in the features section*/
+/*colour and size of icons set in the same way as for text content - color & font-size properties*/
+.feat-icon{
+    color: darkorange;
+    font-size: 50px;
+    padding: 20px;
+    display: block;
+    /*(block element inside flex container - h2 & p are block by default > no problem)*/
+
+    margin-right: 10px;
+}
+
+.text-desc{
+    padding: 20px 0;
+}
+
+#how-it-works{
+    max-width: 600px;
+    margin: 0 auto;  
+}
+
+#pricing{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 900px;
+    margin: 30px auto;
+}
+.pricing-tab{
+    border: 1px solid black;
+    width: 280px;
+    height: 300px; 
+    /*specific dimensions set bcs the amount of text in the content of each tab differs by nature*/
+
+    line-height: 25px;
+    text-align: center;
+}
+
+.pricing-header{
+    text-transform: uppercase;
+    background-color: rosybrown;
+    padding: 15px 5px;
+    font-weight: bold;
+}
+
+
+.pricing-tab-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+.enhanced-price{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.pricing-button{
+    text-transform: uppercase;
+    background-color: #f1c40f;
+    padding: 5px 20px;
+    border: 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.pricing-button:hover{
+    background-color: orange;
+}
+
+
+#footer{
+    background-color: #ddd;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 10px 10px 10px 0px;
+    line-height: 1.3rem;
+}
+
+#footer > ul > li{
+list-style: none;
+display: inline;
+margin-right: 15px;
+}
+
+li > a{
+    text-decoration: none;
+    color: black;
+} 
+
+#copyright{
+    color: rgb(100, 99, 99);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 650px){
+    
+    header{
+        display: block;
+    }
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+    }
+
+    .nav-link{
+        margin-right: 0;
+    }
+
+    main{
+        padding-top: 170px;
+        /*bcs of fixed menu again*/
+        /*padding is better than margin here bcs there is no threat of margin collapse*/
+        }
+
+    iframe{
+        max-width: 100%;
+    }
+
+    #pricing{
+        flex-direction: column;
+        gap: 10px 0px;
+        /*row gap + column gap together*/
+
+        max-width: 290px;
+        margin: 20px auto;
+    }
+
+    #footer{
+        max-width: 100%;
+        text-align: right;
+    }
+}

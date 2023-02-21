@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap"> 
+
+        <script src="https://kit.fontawesome.com/7e22f8cd10.js" crossorigin="anonymous"></script>
+        <!-- fontawesome icons enabled -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product landing page</title>
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="logo-container">
+            <img
+            id="header-img"
+            src="product-landing-page-logo.png"
+            alt="logo that is an outline of a blue trombone facing to the right side
+             where there is a matching title stating Original Trombones"/>
+            </div>
+
+            <nav id="nav-bar">
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#how-it-works">How It Works</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="intro-action">
+                <h2>Handcrafted, home-made masterpieces</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                    <input id="email" type="email" name="email" placeholder="Enter your email address">
+                    <br>
+                    <input id="submit" type="submit" value="GET STARTED">
+                </form>
+            </section>
+            <section id="features">
+                <div class="desc-feat">         
+                    <i class="fa-solid fa-fire-flame-curved feat-icon"></i>
+                    <!-- specific class that adds the individual icon 
+                        ("feat-icon" is just for this document) -->
+                    <div class="text-desc">
+                        <h2>Premium Materials</h2>
+                        <p>Our trombones use the shiniest brass which is sourced locally.
+                            This will increase the longevity of your purchase.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="desc-feat">
+                    <i class="fa-solid fa-truck feat-icon"></i>
+                    <div class="text-desc">
+                        <h2>Fast Shipping</h2>
+                        <p>We make sure you receive your trombone as soon as we have finished making it.
+                            We also provide free returns if you are not satisfied.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="desc-feat">
+                    <i class="fa-solid fa-battery-full feat-icon"></i>
+                    <div class="text-desc">
+                        <h2>Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or faults
+                            and we will check and test the pitch of your instrument.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="how-it-works">
+
+                <!-- external video embedded - default code from YTB used -->
+                <iframe
+                id="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+                frameborder="0"
+                allowfullscreen>
+                </iframe>
+            </section>
+
+            <section id="pricing">
+                <div class="pricing-tab"><!--one-->
+                    <div class="pricing-header">
+                        TENOR TROMBONE
+                    </div>
+                    <div class="pricing-tab-main">
+                        <div class="amount">
+                            <span class="enhanced-price">$600</span>
+                        </div>
+                        <div class="pricing-description">
+                            Lorem ipsum.<br>
+                            Lorem ipsum.<br>
+                            Lorem ipsum dolor.<br>
+                            Lorem ipsum.
+                        </div>
+                    </div>
+                    <button class="pricing-button">
+                        select
+                    </button>
+                </div>
+                <div class="pricing-tab"><!--two-->
+                    <div class="pricing-header">
+                        bass trombone
+                    </div>
+                    <div class="pricing-tab-main">
+                        <div class="amount">
+                            <span class="enhanced-price">$900</span>
+                        </div>
+                        <div class="pricing-description">
+                            Lorem ipsum.<br>
+                            Lorem ipsum.<br>
+                            Lorem ipsum dolor.<br>
+                            Lorem ipsum.
+                        </div>
+                    </div>
+                    <button class="pricing-button">select
+                    </button>
+                </div>
+                <div class="pricing-tab"><!--three-->
+                    <div class="pricing-header">
+                        valve trombone
+                    </div>
+                    <div class="pricing-tab-main">
+                        <div class="amount">
+                            <span class="enhanced-price">$1200</span>
+                        </div>
+                        <div class="pricing-description">
+                            Plays similar to a Trumpet<br>
+                            Great for Jazz Bands<br>
+                            Lorem ipsum dolor.<br>
+                            Lorem ipsum.
+                        </div>
+                    </div>
+                    <button class="pricing-button">select
+                    </button>
+                </div>
+            </section>  
+        </main>
+
+        <footer id="footer">
+            <ul>
+                <li><a href="#">privacy</a></li>
+                <li><a href="#">terms</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div id="copyright">Copyright 2022, Original trombones</div>
+        </footer>
+    </body>
+</html>
